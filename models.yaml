@@ -403,6 +403,12 @@
 #  - https://docs.x.ai/docs/api-reference#chat-completions
 - provider: xai
   models:
+    - name: grok-4-0709
+      max_input_tokens: 256000
+      input_price: 3
+      output_price: 15
+      supports_vision: true
+      supports_function_calling: true
     - name: grok-3-latest
       max_input_tokens: 131072
       input_price: 3
@@ -1479,6 +1485,12 @@
       max_input_tokens: 131072
       input_price: 0.3
       output_price: 0.5
+    - name: x-ai/grok-4
+      max_input_tokens: 256000
+      input_price: 3
+      output_price: 15
+      supports_vision: true
+      supports_function_calling: true
     - name: amazon/nova-pro-v1
       max_input_tokens: 300000
       max_output_tokens: 5120
@@ -1685,6 +1697,8 @@
       max_input_tokens: 131072
     - name: grok-3-mini
       max_input_tokens: 131072
+    - name: grok-4-0709
+      max_input_tokens: 256000
 
 # Links:
 #  - https://deepinfra.com/models
